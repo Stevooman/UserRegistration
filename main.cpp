@@ -15,9 +15,9 @@ int main()
     std::cout << "-------------------------------------------------------" << std::endl;
     std::cout << "Welcome to the accounts application!" << std::endl << std::endl;
 
-    Accounts a;
-    
     display_menu();
+
+    Accounts a;
 
     int choice = CREATEACCOUNT;                                 
     while (choice != EXIT) {                           
@@ -50,7 +50,7 @@ int main()
             }
         }
     }
-    std::cout << "Goodbye!" << std::endl << std::endl;
+    std::cout << "Goodbye." << std::endl << std::endl;
 
     return 0;
 }

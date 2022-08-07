@@ -1,0 +1,104 @@
+\hypertarget{accounts_8h_source}{}\doxysection{C\+:/\+Users/\+Steve Oman/\+Documents/\+C++ Projects/repos/\+User\+Registration/accounts.h}
+\mbox{\hyperlink{accounts_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once    }}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{class_accounts}{Accounts}} \{}
+\DoxyCodeLine{16 \textcolor{keyword}{private}:}
+\DoxyCodeLine{20     std::string \mbox{\hyperlink{class_accounts_a76cb3039286f8552dfd38f097d24bf0d}{username}};}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{25     std::string \mbox{\hyperlink{class_accounts_a0003ee37a90640f3025daeac852ff34f}{password}};}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{30     std::string \mbox{\hyperlink{class_accounts_a4c9cd0de8d9fb4aeede802b04b5546d2}{alpha\_and\_nums}};}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{35     std::string \mbox{\hyperlink{class_accounts_a45c81d3cb15f1a45ab92f6372368bc5b}{numbers}};}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{40     \textcolor{keyword}{const} std::string \mbox{\hyperlink{class_accounts_acff594b936b917284904cbdd1e3bff69}{master\_password}} = \textcolor{stringliteral}{"{}Boiseisnotastate"{}};}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{45     std::string \mbox{\hyperlink{class_accounts_a75b2318e74b7e563745f1dba22cef534}{master\_filename}};}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{50     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_accounts_abc5b5e195c5d41badd6d4a72be1344eb}{required\_username\_length}};}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{55     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_accounts_a9916eeaa99bbf7e4d7b95459f157c437}{required\_letter\_count}};}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{60     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_accounts_a7a5e8b8f35c4d60b6a5381f7d704393e}{required\_password\_length}};}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62     \textcolor{comment}{// Private methods}}
+\DoxyCodeLine{63     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_accounts_a14c23e2415b05e6604826ef567b06a86}{letter\_count}}(std::string word) \textcolor{keyword}{const};}
+\DoxyCodeLine{64     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_accounts_ac65efd7a5e1d31d89236d2fbdbc3388b}{special\_character}}(std::string word) \textcolor{keyword}{const};}
+\DoxyCodeLine{65     std::vector<std::string> \mbox{\hyperlink{class_accounts_a31f6efa662bbac90803883b1a3654ed4}{read\_users}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{66     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_accounts_ab1beb2c6e17dfa75dd39a3f6f1049ecb}{update\_file}}(std::vector<std::string> accounts) \textcolor{keyword}{const};}
+\DoxyCodeLine{67 \textcolor{keyword}{public}:}
+\DoxyCodeLine{68     \textcolor{comment}{// Constructor declaration}}
+\DoxyCodeLine{69     \mbox{\hyperlink{class_accounts_a1e38225716628bfd495622707f411b92}{Accounts}}();}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{75     std::string \mbox{\hyperlink{class_accounts_a546da33f6253fcd7e6889fe7310a6440}{get\_username}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_accounts_a76cb3039286f8552dfd38f097d24bf0d}{username}}; \}}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{81     std::string \mbox{\hyperlink{class_accounts_ae1fdab4d343bd77585867585c7a886c1}{get\_password}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_accounts_a0003ee37a90640f3025daeac852ff34f}{password}}; \}}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{87     std::string \mbox{\hyperlink{class_accounts_a0f0d936786c7ed774910d3694a90b380}{get\_alpha\_and\_nums}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_accounts_a4c9cd0de8d9fb4aeede802b04b5546d2}{alpha\_and\_nums}}; \}}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{93     std::string \mbox{\hyperlink{class_accounts_a9e589a000edd43d529b600704f06f22c}{get\_numbers}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_accounts_a45c81d3cb15f1a45ab92f6372368bc5b}{numbers}}; \}}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{99     std::string \mbox{\hyperlink{class_accounts_af845dd2d8584ca836b66f49558e748a0}{get\_master\_password}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_accounts_acff594b936b917284904cbdd1e3bff69}{master\_password}}; \}       }
+\DoxyCodeLine{100                                                                         }
+\DoxyCodeLine{105     std::string \mbox{\hyperlink{class_accounts_a53f381ca0b77524484ab029149cfecd3}{get\_master\_filename}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_accounts_a75b2318e74b7e563745f1dba22cef534}{master\_filename}}; \}}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{111     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_accounts_adcc833f0baeda7e2f4cf69d036bab02d}{get\_required\_username\_length}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_accounts_abc5b5e195c5d41badd6d4a72be1344eb}{required\_username\_length}}; \}}
+\DoxyCodeLine{112 }
+\DoxyCodeLine{117     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_accounts_a5ee22bfe43faeb07edca62ce156246a1}{get\_required\_letter\_count}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_accounts_a9916eeaa99bbf7e4d7b95459f157c437}{required\_letter\_count}}; \}}
+\DoxyCodeLine{118 }
+\DoxyCodeLine{123     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_accounts_abbe84de0df808aeca23ab75d30b00322}{get\_required\_password\_length}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_accounts_a7a5e8b8f35c4d60b6a5381f7d704393e}{required\_password\_length}}; \}}
+\DoxyCodeLine{124 }
+\DoxyCodeLine{130     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_accounts_a4ee26b35c2b71cbfe666c61b300b9d44}{get\_letter\_count}}(std::string word)\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_accounts_a14c23e2415b05e6604826ef567b06a86}{letter\_count}}(word); \}}
+\DoxyCodeLine{131 }
+\DoxyCodeLine{137     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_accounts_a88eac13b8abfdee57fa04d4cd8e78b5b}{get\_special\_character}}(std::string word)\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_accounts_ac65efd7a5e1d31d89236d2fbdbc3388b}{special\_character}}(word); \}}
+\DoxyCodeLine{138 }
+\DoxyCodeLine{143     std::vector<std::string> \mbox{\hyperlink{class_accounts_a07e1afb18a79037a6af96299dc9e7613}{get\_users}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_accounts_a31f6efa662bbac90803883b1a3654ed4}{read\_users}}(); \}}
+\DoxyCodeLine{144 }
+\DoxyCodeLine{149     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_accounts_a5191d885cee5f4200e31a4446a12cc87}{get\_update\_file}}(std::vector<std::string> accounts)\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_accounts_ab1beb2c6e17dfa75dd39a3f6f1049ecb}{update\_file}}(accounts); \}}
+\DoxyCodeLine{150     }
+\DoxyCodeLine{155     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_accounts_afa8212794164d11f6e4ac91c5f4659cb}{set\_username}}(std::string username\_p) \{}
+\DoxyCodeLine{156         \mbox{\hyperlink{class_accounts_a76cb3039286f8552dfd38f097d24bf0d}{username}} = username\_p;}
+\DoxyCodeLine{157     \}}
+\DoxyCodeLine{158 }
+\DoxyCodeLine{163     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_accounts_a679d2a4891914fc2419e388c46dd77d5}{set\_password}}(std::string password\_p) \{}
+\DoxyCodeLine{164         \mbox{\hyperlink{class_accounts_a0003ee37a90640f3025daeac852ff34f}{password}} = password\_p;}
+\DoxyCodeLine{165     \}}
+\DoxyCodeLine{166 }
+\DoxyCodeLine{171     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_accounts_a3e2ae1e8abaaf9c4a8dd000e84ba9147}{set\_alpha\_and\_nums}}(std::string alpha\_and\_nums\_p) \{}
+\DoxyCodeLine{172         \mbox{\hyperlink{class_accounts_a4c9cd0de8d9fb4aeede802b04b5546d2}{alpha\_and\_nums}} = alpha\_and\_nums\_p;}
+\DoxyCodeLine{173     \}}
+\DoxyCodeLine{174 }
+\DoxyCodeLine{179     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_accounts_a082c5733af8cb75b6d0ffee3b52b2f76}{set\_numbers}}(std::string numbers\_p) \{}
+\DoxyCodeLine{180         \mbox{\hyperlink{class_accounts_a45c81d3cb15f1a45ab92f6372368bc5b}{numbers}} = numbers\_p;}
+\DoxyCodeLine{181     \}}
+\DoxyCodeLine{182 }
+\DoxyCodeLine{187     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_accounts_ad54ca70b9479f8e340a9a6b70d589523}{set\_master\_filename}}(std::string master\_file\_p) \{}
+\DoxyCodeLine{188         \mbox{\hyperlink{class_accounts_a75b2318e74b7e563745f1dba22cef534}{master\_filename}} = master\_file\_p;}
+\DoxyCodeLine{189     \}}
+\DoxyCodeLine{190 }
+\DoxyCodeLine{195     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_accounts_ae448239005ba88b4daeab11e45655584}{set\_required\_username\_length}}(\textcolor{keywordtype}{int} required\_length\_p) \{}
+\DoxyCodeLine{196         \mbox{\hyperlink{class_accounts_abc5b5e195c5d41badd6d4a72be1344eb}{required\_username\_length}} = required\_length\_p;}
+\DoxyCodeLine{197     \}}
+\DoxyCodeLine{198 }
+\DoxyCodeLine{203     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_accounts_a16292a89bcc5adff2724f4565c0ffacc}{set\_required\_letter\_count}}(\textcolor{keywordtype}{int} num\_p) \{}
+\DoxyCodeLine{204         \mbox{\hyperlink{class_accounts_a9916eeaa99bbf7e4d7b95459f157c437}{required\_letter\_count}} = num\_p;}
+\DoxyCodeLine{205     \}}
+\DoxyCodeLine{206 }
+\DoxyCodeLine{211     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_accounts_aa3e12cf9b745cafca4d96b681d819745}{set\_required\_password\_length}}(\textcolor{keywordtype}{int} num\_p) \{}
+\DoxyCodeLine{212         \mbox{\hyperlink{class_accounts_a7a5e8b8f35c4d60b6a5381f7d704393e}{required\_password\_length}} = num\_p;}
+\DoxyCodeLine{213     \}}
+\DoxyCodeLine{214 }
+\DoxyCodeLine{215     \textcolor{comment}{// member function declarations}}
+\DoxyCodeLine{216     std::string \mbox{\hyperlink{class_accounts_a54bec29b3fb277c3bb2f377f0e922b83}{verify\_username}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{217     std::string \mbox{\hyperlink{class_accounts_a9229eb813ea4e40558ed99fbcbc37af6}{verify\_password}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{218     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_accounts_a6fa3d7988da204249a9a3bf891d4321b}{read\_from\_file}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{219     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_accounts_a7ba1bf1c0fd4aed4e82602ae9abed2fc}{write\_to\_file}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{220     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_accounts_ac778fe6569a71ec5dd8f856804e6bec7}{delete\_item}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{221 \};}
+
+\end{DoxyCode}
